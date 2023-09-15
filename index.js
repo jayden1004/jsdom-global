@@ -27,6 +27,13 @@ module.exports = function globalJsdom (html, options) {
 
   var jsdom = require('jsdom')
   const resourceLoader = new jsdom.ResourceLoader({
+    appCodeName: "Mozilla",
+    appName: "Netscape",
+    appVersion: "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    cookieEnabled: true,
+    language: "en-GB",
+    onLine: true,
+    platform: "Win32",
     userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
   });
   options.resources = resourceLoader;
