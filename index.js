@@ -44,6 +44,7 @@ module.exports = function globalJsdom (html, options) {
     platform: "Win32",
     userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
   });
+  console.log(resourceLoader);
   options.resources = resourceLoader;
   var document = new jsdom.JSDOM(html, options)
   var window = document.window
